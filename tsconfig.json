@@ -4,6 +4,6 @@
         "module": "CommonJS",
         "outDir": "dist",
         "esModuleInterop": true,
-        "strict": true
+        "strict": false
     }
 }

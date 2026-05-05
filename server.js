@@ -24,7 +24,7 @@ app.get('/proxy/:id', async (req, res) => {
 
         res.json(response.data);
 
-    } catch (error: any) {
+    } catch (error) {
         res.status(error.response?.status || 500).json({
             error: 'Error en proxy',
             message: error.message
@@ -47,7 +47,7 @@ app.get('/proxy/turno/:id', async (req, res) => {
 
         res.json(response.data);
 
-    } catch (error: any) {
+    } catch (error) {
         res.status(error.response?.status || 500).json({
             error: 'Error en proxy turno',
             message: error.message
